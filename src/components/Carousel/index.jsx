@@ -9,6 +9,9 @@ const GalleryStyled = styled.div`
   width: 100%;
   height: 500px;
   background-color: green;
+
+  left: -290px;
+  width: calc(100% + 600px);
 `;
 
 const GalleryCellStyled = styled.div`
@@ -25,8 +28,10 @@ const GalleryCellStyled = styled.div`
   img {
     position: relative;
     top: 30px;
-    width: 90%;
-    height: 60%;
+    /* width: 90%;
+    height: 60%; */
+    width: 338px;
+    height: 296px;
     border-radius: 30px;
   }
   div {
@@ -66,9 +71,9 @@ const GalleryCellStyled = styled.div`
       }
       span {
         /* margin-left: 100px; */
-        background: lightgray;
+        background: rgba(0, 0, 0, 0.08);
         padding: 5px 10px;
-        border-radius: 10px;
+        border-radius: 5px;
         position: absolute;
         right: 0;
       }
@@ -99,14 +104,14 @@ const CircularButton = styled.button`
     props.left &&
     css`
       background-color: white;
-      left: 21%;
+      left: 23%;
     `}
 
   ${(props) =>
     props.right &&
     css`
       background-color: white;
-      right: 21%;
+      right: 23%;
     `}
 `;
 
