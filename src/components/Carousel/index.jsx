@@ -1,9 +1,11 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Text from "../Texts";
 import TodayIcon from "@mui/icons-material/Today";
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 
 const GalleryStyled = styled.div`
   display: flex;
+  position: relative;
   width: 100%;
   height: 500px;
   background-color: green;
@@ -38,14 +40,20 @@ const GalleryCellStyled = styled.div`
     p {
       margin: 0 0 50px 0;
     }
+    svg#play-arrow-icon-carousel {
+      top: 15px;
+      position: absolute;
+      right: 20px;
+    }
     div {
       /* background-color: purple; */
       /* display: inline-flex; */
       /* align-items: center; */
       padding: 0;
       width: 100%;
-      display: inline-block;
-      svg {
+      /* display: inline-block; */
+      bottom: 25px;
+      svg#today-icon-carousel {
         position: absolute;
       }
       p {
@@ -76,6 +84,32 @@ const GalleryCellStyled = styled.div`
   }
 `;
 
+const CircularButton = styled.button`
+  position: absolute;
+  top: 7px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  appearance: none;
+  border: none;
+  box-shadow: 0 2px 25px rgba(98, 109, 117, 0.56);
+  cursor: pointer;
+
+  ${(props) =>
+    props.left &&
+    css`
+      background-color: white;
+      left: 21%;
+    `}
+
+  ${(props) =>
+    props.right &&
+    css`
+      background-color: white;
+      right: 21%;
+    `}
+`;
+
 const Carousel = () => {
   return (
     <GalleryStyled>
@@ -85,8 +119,18 @@ const Carousel = () => {
           <p>
             Tellus cras adipiscing enim eu turpis. Tincidunt praesent semper
           </p>
+          <PlayArrowIcon
+            id="play-arrow-icon-carousel"
+            color="primary"
+            fontSize="small"
+            sx={{ fontSize: 13 }}
+          />
           <div>
-            <TodayIcon />
+            <TodayIcon
+              id="today-icon-carousel"
+              color="primary"
+              fontSize="small"
+            />
             <p>Vestibulum enim in</p>
             <span>2020</span>
             <hr />
@@ -105,6 +149,8 @@ const Carousel = () => {
       <GalleryCellStyled>
         <img src="src/assets/slide-img5.jpg" alt="slideImg5" />
       </GalleryCellStyled>
+      <CircularButton left>{"<"}</CircularButton>
+      <CircularButton right>{">"}</CircularButton>
     </GalleryStyled>
   );
 };
