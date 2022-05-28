@@ -13,6 +13,10 @@ const ButtonTextStyled = styled.button`
   border: none;
   box-shadow: 0 2px 25px rgba(98, 109, 117, 0.56);
   cursor: pointer;
+  :active {
+    border: 1px inset #1d659f;
+    padding: 4px 2px 2px 4px;
+  }
 `;
 
 const ButtonText = ({ children, width, height, borderRadius }) => {
