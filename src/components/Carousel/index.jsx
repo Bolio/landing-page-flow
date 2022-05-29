@@ -8,7 +8,7 @@ const GalleryStyled = styled.div`
   position: relative;
   width: 100%;
   height: 500px;
-  background-color: green;
+  /* background-color: green; */
 
   left: -290px;
   width: calc(100% + 600px);
@@ -22,16 +22,16 @@ const GalleryCellStyled = styled.div`
   /* align-items: center; */
   width: 100%;
   height: 100%;
-  background-color: lightblue;
-  border-style: dashed;
+  /* background-color: lightblue; */
+  /* border-style: dashed; */
   flex-wrap: wrap;
   img {
     position: relative;
-    top: 30px;
-    /* width: 90%;
-    height: 60%; */
-    width: 338px;
-    height: 296px;
+    /* top: 30px; */
+    width: 90%;
+    height: 75%;
+    /* width: 338px;
+    height: 296px; */
     border-radius: 30px;
   }
   div {
@@ -91,7 +91,7 @@ const GalleryCellStyled = styled.div`
 
 const CircularButton = styled.button`
   position: absolute;
-  top: 7px;
+  top: -27px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -104,14 +104,14 @@ const CircularButton = styled.button`
     props.left &&
     css`
       background-color: white;
-      left: 23%;
+      left: 21%;
     `}
 
   ${(props) =>
     props.right &&
     css`
       background-color: white;
-      right: 23%;
+      right: 21%;
     `}
 `;
 
