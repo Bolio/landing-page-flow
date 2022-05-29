@@ -89,7 +89,7 @@ const GalleryCellStyled = styled.div`
   }
 `;
 
-const CircularButton = styled.button`
+const CircularButtonStyled = styled.button`
   position: absolute;
   top: -27px;
   width: 50px;
@@ -154,8 +154,8 @@ const Carousel = () => {
       <GalleryCellStyled>
         <img src="src/assets/slide-img5.jpg" alt="slideImg5" />
       </GalleryCellStyled>
-      <CircularButton left>{"<"}</CircularButton>
-      <CircularButton right>{">"}</CircularButton>
+      <CircularButtonStyled left>{"<"}</CircularButtonStyled>
+      <CircularButtonStyled right>{">"}</CircularButtonStyled>
     </GalleryStyled>
   );
 };
