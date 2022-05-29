@@ -5,6 +5,7 @@ import Layout from "./components/Layout";
 import Title from "./components/Title";
 import InitialSection from "./sections/Initial";
 import CarouselSection from "./sections/Carousel";
+import KnowMoreSection from "./sections/KnowMore";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Title imgSrc="src/assets/Logo.png" altInfo="Logo-Title" />
         <InitialSection />
         <CarouselSection />
+        <KnowMoreSection />
       </Layout>
     </ThemeProvider>
     // </div>
