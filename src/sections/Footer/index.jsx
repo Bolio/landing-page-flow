@@ -31,7 +31,15 @@ const GridContainerFooterStyled = styled.div`
 const InitialInfoFooterStyled = styled.div`
   background-color: orange;
   grid-column: 1 /3;
-  padding: 100px 550px 20px 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 100px 550px 20px 550px; */
+  p {
+    width: 40%;
+    margin: 16px 0;
+  }
 `;
 
 const SearchFooterStyled = styled.div`
@@ -45,6 +53,7 @@ const SearchFooterStyled = styled.div`
 
 const SocialNetworksFooterStyled = styled.div`
   width: 100%;
+    padding-left: 100px;
   background-color: pink;
   img {
     margin-bottom: 20px;
@@ -67,10 +76,19 @@ const InformationContactFooterStyled = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 20px 80px 20px 80px;
+  padding: 20px 80px 20px 100px;
   background-color: aquamarine;
   div {
     display: inline-block;
+    p {
+      color: white;
+      :nth-child(1) {
+        font-size: 1rem;
+      }
+      :nth-child(n+2) {
+        font-size: 0.8rem;
+      }
+    }
   }
 `;
 
@@ -87,7 +105,7 @@ const LinkSocialNetworksStyled = styled.div`
   height: 40px;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #C0C0C0;
   border-radius: 50%;
 `;
 
@@ -108,11 +126,21 @@ const FooterSection = () => {
         <ContainerFooterStyled>
           <GridContainerFooterStyled>
             <InitialInfoFooterStyled>
-              <Text fontSize="22px" fontWeight="bolder" textAlign="center">
+              <Text
+                fontSize="2rem"
+                fontWeight="bolder"
+                textAlign="center"
+                color="white"
+              >
                 Porttitor imperdiet congue eu vel scelerisque quis enim, egestas
                 sed ut.
               </Text>
-              <Text fontSize="12px" fontWeight="bolder" textAlign="center">
+              <Text
+                fontSize="1rem"
+                fontWeight="bolder"
+                textAlign="center"
+                color="white"
+              >
                 Ut elementum pellentesque tellus ornare a pellentesque.
                 Sollicitudin in orci proin et mauris neque. Habitant sit vel
                 malesuada eros.
@@ -138,7 +166,7 @@ const FooterSection = () => {
 
             <SocialNetworksFooterStyled>
               <img src="src/assets/Logo-1.png" alt="footer-img" />
-              <Text fontSize="12px" fontWeight="bolder">
+              <Text fontSize="0.9rem" fontWeight="bolder" color="white">
                 Elit et sed mauris, eu scelerisque id. Viverra dui diam ultrices
                 malesuada scelerisque.
               </Text>
@@ -192,7 +220,12 @@ const FooterSection = () => {
             </InformationContactFooterStyled>
 
             <CopyrightReservedFooterStyled>
-              <Text fontSize="12px" fontWeight="bolder" textAlign="center">
+              <Text
+                fontSize="0.8rem"
+                fontWeight="bolder"
+                textAlign="center"
+                color="white"
+              >
                 2022 Flow® los derechos reservados
               </Text>
             </CopyrightReservedFooterStyled>
