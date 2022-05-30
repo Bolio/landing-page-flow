@@ -7,7 +7,7 @@ const LayoutStyled = styled.div`
   /* grid-template-rows: 1fr repeat(4, 10fr); */
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
-  gap: 50px;
+  gap: 20px;
   /* margin: 30px 100px 0 100px; */
 `;
 
