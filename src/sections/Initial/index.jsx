@@ -11,11 +11,21 @@ const InitialSectionStyled = styled.div`
   /* grid-template-rows: 32px 1fr; */
   grid-template-rows: auto 1fr;
   padding: 30px 100px 0 100px;
+
+  @media screen and (max-width: 425px) {
+    background-color: blue;
+    display: flex;
+    flex-direction: column-reverse;
+  }
 `;
 
 const WrapperTitleStyled = styled.div`
   grid-column: 1 / 3;
   /* padding: 30px 100px 0 100px; */
+  @media screen and (max-width: 425px) {
+    position: absolute;
+    top: 30px;
+  }
 `;
 
 const InfoContactStyled = styled.div`
@@ -35,6 +45,16 @@ const InfoContactStyled = styled.div`
     }
     button {
       margin-top: 20px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    text-align: center;
+    div {
+      margin-top: 30px;
+      p:nth-child(2) {
+        font-size: 1.5rem;
+      }
     }
   }
 `;
@@ -72,7 +92,12 @@ const InitialSection = () => {
               nibh venenatis. Dui nunc mattis enim ut tellus elementum. Leo
               integer malesuada nunc vel.
             </Text>
-            <ButtonText width="160px" height="40px" borderRadius="40px" status={"primary"}>
+            <ButtonText
+              width="160px"
+              height="40px"
+              borderRadius="40px"
+              status={"primary"}
+            >
               CONTACTO
             </ButtonText>
           </div>
