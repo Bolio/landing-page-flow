@@ -69,7 +69,7 @@ const InitialSection = () => {
               nibh venenatis. Dui nunc mattis enim ut tellus elementum. Leo
               integer malesuada nunc vel.
             </Text>
-            <ButtonText width="160px" height="40px" borderRadius="40px">
+            <ButtonText width="160px" height="40px" borderRadius="40px" status={"primary"}>
               CONTACTO
             </ButtonText>
           </div>
