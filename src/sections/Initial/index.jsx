@@ -6,7 +6,8 @@ import ButtonText from "../../components/Buttons";
 
 const InitialSectionStyled = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: auto auto;
   /* grid-template-rows: 32px 1fr; */
   grid-template-rows: auto 1fr;
   padding: 30px 100px 0 100px;
@@ -44,9 +45,11 @@ const ImgVideoStyled = styled.div`
   text-align: center;
   img {
     /* height: 100%; */
-    object-fit: cover;
+    /* object-fit: cover; */
     border-radius: 300px;
     /* margin: 0 auto; */
+    max-width: 100%;
+    height: auto;
   }
 `;
 
