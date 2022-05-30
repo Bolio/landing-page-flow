@@ -6,7 +6,7 @@ const KnowMoreSectionStyled = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 60%;
-  padding: 30px 100px 0 100px;
+  /* padding: 30px 100px 0 100px; */
 `;
 
 const InfoKnowMoreStyled = styled.div`
