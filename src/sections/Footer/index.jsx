@@ -18,13 +18,13 @@ const ContainerFooterStyled = styled.footer`
   width: 100%;
   padding: 0 100px 0 100px;
   background-color: ${(props) => props.theme.colors.blue};
-  border-radius: 400px 100px 0px 0px;
+  border-radius: 350px 100px 0px 0px;
 `;
 
 const GridContainerFooterStyled = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 1fr 2fr 1fr;
+  grid-template-rows: 2fr 1fr 2fr 70px;
   background-color: green;
 `;
 
@@ -36,14 +36,31 @@ const InitialInfoFooterStyled = styled.div`
 
 const SearchFooterStyled = styled.div`
   background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-column: 1 /3;
-  padding: 20px 550px 0 550px;
-  text-align: center;
+  /* padding: 20px 550px 0 550px; */
 `;
 
 const SocialNetworksFooterStyled = styled.div`
   width: 100%;
   background-color: pink;
+  img {
+    margin-bottom: 20px;
+  }
+  p {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+  div#container-social-network-icons {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    svg {
+      color: ${(props) => props.theme.colors.lightBlue};
+    }
+  }
 `;
 
 const InformationContactFooterStyled = styled.div`
@@ -126,23 +143,25 @@ const FooterSection = () => {
                 malesuada scelerisque.
               </Text>
 
-              <LinkSocialNetworksStyled>
-                <a href="https://www.fcebook.com/">
-                  <FacebookIcon />
-                </a>
-              </LinkSocialNetworksStyled>
+              <div id="container-social-network-icons">
+                <LinkSocialNetworksStyled>
+                  <a href="https://www.fcebook.com/">
+                    <FacebookIcon />
+                  </a>
+                </LinkSocialNetworksStyled>
 
-              <LinkSocialNetworksStyled>
-                <a href="https://twitter.com/">
-                  <TwitterIcon />
-                </a>
-              </LinkSocialNetworksStyled>
+                <LinkSocialNetworksStyled>
+                  <a href="https://twitter.com/">
+                    <TwitterIcon />
+                  </a>
+                </LinkSocialNetworksStyled>
 
-              <LinkSocialNetworksStyled>
-                <a href="https://www.linkedin.com/feed/">
-                  <LinkedInIcon />
-                </a>
-              </LinkSocialNetworksStyled>
+                <LinkSocialNetworksStyled>
+                  <a href="https://www.linkedin.com/feed/">
+                    <LinkedInIcon />
+                  </a>
+                </LinkSocialNetworksStyled>
+              </div>
             </SocialNetworksFooterStyled>
 
             <InformationContactFooterStyled>
