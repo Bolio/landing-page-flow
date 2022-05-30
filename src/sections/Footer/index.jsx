@@ -16,7 +16,7 @@ const FooterSectionStyled = styled.div`
 
 const ContainerFooterStyled = styled.footer`
   width: 100%;
-  padding: 0 100px 0 100px;
+  padding: 50px 100px 0 100px;
   background-color: ${(props) => props.theme.colors.blue};
   border-radius: 350px 100px 0px 0px;
 `;
@@ -53,7 +53,7 @@ const SearchFooterStyled = styled.div`
 
 const SocialNetworksFooterStyled = styled.div`
   width: 100%;
-    padding-left: 100px;
+  padding-left: 100px;
   background-color: pink;
   img {
     margin-bottom: 20px;
@@ -64,7 +64,7 @@ const SocialNetworksFooterStyled = styled.div`
   }
   div#container-social-network-icons {
     display: flex;
-    width: 20%;
+    width: 150px;
     justify-content: space-between;
     svg {
       color: ${(props) => props.theme.colors.lightBlue};
@@ -85,7 +85,7 @@ const InformationContactFooterStyled = styled.div`
       :nth-child(1) {
         font-size: 1rem;
       }
-      :nth-child(n+2) {
+      :nth-child(n + 2) {
         font-size: 0.8rem;
       }
     }
@@ -105,7 +105,7 @@ const LinkSocialNetworksStyled = styled.div`
   height: 40px;
   justify-content: center;
   align-items: center;
-  background-color: #C0C0C0;
+  background-color: #c0c0c0;
   border-radius: 50%;
 `;
 
