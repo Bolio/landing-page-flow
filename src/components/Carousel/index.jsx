@@ -144,15 +144,99 @@ const Carousel = () => {
       </GalleryCellStyled>
       <GalleryCellStyled>
         <img src="src/assets/slide-img2.jpg" alt="slideImg2" />
+        <div>
+          <p>
+            Tellus cras adipiscing enim eu turpis. Tincidunt praesent semper
+          </p>
+          <PlayArrowIcon
+            id="play-arrow-icon-carousel"
+            color="primary"
+            fontSize="small"
+            sx={{ fontSize: 13 }}
+          />
+          <div>
+            <TodayIcon
+              id="today-icon-carousel"
+              color="primary"
+              fontSize="small"
+            />
+            <p>Vestibulum enim in</p>
+            <span>2020</span>
+            <hr />
+          </div>
+        </div>
       </GalleryCellStyled>
       <GalleryCellStyled>
         <img src="src/assets/slide-img3.jpg" alt="slideImg3" />
+        <div>
+          <p>
+            Tellus cras adipiscing enim eu turpis. Tincidunt praesent semper
+          </p>
+          <PlayArrowIcon
+            id="play-arrow-icon-carousel"
+            color="primary"
+            fontSize="small"
+            sx={{ fontSize: 13 }}
+          />
+          <div>
+            <TodayIcon
+              id="today-icon-carousel"
+              color="primary"
+              fontSize="small"
+            />
+            <p>Vestibulum enim in</p>
+            <span>2020</span>
+            <hr />
+          </div>
+        </div>
       </GalleryCellStyled>
       <GalleryCellStyled>
         <img src="src/assets/slide-img4.jpg" alt="slideImg4" />
+        <div>
+          <p>
+            Tellus cras adipiscing enim eu turpis. Tincidunt praesent semper
+          </p>
+          <PlayArrowIcon
+            id="play-arrow-icon-carousel"
+            color="primary"
+            fontSize="small"
+            sx={{ fontSize: 13 }}
+          />
+          <div>
+            <TodayIcon
+              id="today-icon-carousel"
+              color="primary"
+              fontSize="small"
+            />
+            <p>Vestibulum enim in</p>
+            <span>2020</span>
+            <hr />
+          </div>
+        </div>
       </GalleryCellStyled>
       <GalleryCellStyled>
         <img src="src/assets/slide-img5.jpg" alt="slideImg5" />
+        <div>
+          <p>
+            Tellus cras adipiscing enim eu turpis. Tincidunt praesent semper
+          </p>
+          <PlayArrowIcon
+            id="play-arrow-icon-carousel"
+            color="primary"
+            fontSize="small"
+            sx={{ fontSize: 13 }}
+          />
+          <div>
+            <TodayIcon
+              id="today-icon-carousel"
+              color="primary"
+              fontSize="small"
+            />
+            <p>Vestibulum enim in</p>
+            <span>2020</span>
+            <hr />
+          </div>
+        </div>
       </GalleryCellStyled>
       <CircularButtonStyled left>{"<"}</CircularButtonStyled>
       <CircularButtonStyled right>{">"}</CircularButtonStyled>
