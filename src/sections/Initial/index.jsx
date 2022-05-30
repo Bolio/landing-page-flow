@@ -1,12 +1,20 @@
 import styled from "styled-components";
+
+import Title from "../../components/Title";
 import Text from "../../components/Texts";
 import ButtonText from "../../components/Buttons";
 
 const InitialSectionStyled = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100%;
+  /* grid-template-rows: 32px 1fr; */
+  grid-template-rows: auto 1fr;
   padding: 30px 100px 0 100px;
+`;
+
+const WrapperTitleStyled = styled.div`
+  grid-column: 1 / 3;
+  /* padding: 30px 100px 0 100px; */
 `;
 
 const InfoContactStyled = styled.div`
@@ -47,6 +55,9 @@ const InitialSection = () => {
     <>
       {/* ROJO - 2 columns */}
       <InitialSectionStyled>
+        <WrapperTitleStyled>
+          <Title imgSrc="src/assets/Logo.png" altInfo="Logo-Title" />
+        </WrapperTitleStyled>
         <InfoContactStyled>
           <div>
             <Text fontSize="60px" fontWeight="bolder">
