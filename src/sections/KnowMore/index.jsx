@@ -9,7 +9,7 @@ const KnowMoreSectionStyled = styled.div`
   padding: 30px 100px 0 100px;
 `;
 
-const InfoContactStyled = styled.div`
+const InfoKnowMoreStyled = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -66,7 +66,7 @@ const KnowMoreSection = () => {
         <ImgStyled>
           <img src="src/assets/img-sect2.png" alt="rocket-img" />
         </ImgStyled>
-        <InfoContactStyled>
+        <InfoKnowMoreStyled>
           <div>
             <Text fontSize="10px" fontWeight="medium" color="lightBlue">
               OVERLINE
@@ -106,7 +106,7 @@ const KnowMoreSection = () => {
               </ButtonText>
             </WrapperButtonsStyled>
           </div>
-        </InfoContactStyled>
+        </InfoKnowMoreStyled>
       </KnowMoreSectionStyled>
     </>
   );
