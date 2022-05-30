@@ -6,6 +6,7 @@ import Title from "./components/Title";
 import InitialSection from "./sections/Initial";
 import CarouselSection from "./sections/Carousel";
 import KnowMoreSection from "./sections/KnowMore";
+import FooterSection from "./sections/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <InitialSection />
         <CarouselSection />
         <KnowMoreSection />
+        <FooterSection />
       </Layout>
     </ThemeProvider>
     // </div>
