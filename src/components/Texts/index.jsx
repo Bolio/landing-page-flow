@@ -7,7 +7,7 @@ const TextStyled = styled.p`
   font-size: ${({ fontSize }) => fontSize};
   font-weight: ${({ fontWeight }) => fontWeight};
   text-align: ${({ textAlign }) => textAlign};
-  color: ${(props) => props.color === "lightBlue" ? props.theme.colors.lightBlue : null};
+  color: ${(props) => props.color === "lightBlue" ? props.theme.colors.lightBlue : props.color};
 
   /* ${(props) =>
     props.status === "title" &&
