@@ -5,7 +5,8 @@ import ButtonText from "../../components/Buttons";
 const KnowMoreSectionStyled = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 60%;
+  /* grid-template-rows: 60%; */
+  grid-template-rows: auto;
   /* padding: 30px 100px 0 100px; */
 `;
 
@@ -14,7 +15,7 @@ const InfoKnowMoreStyled = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   div {
-    margin-top: 100px;
+    /* margin-top: 100px; */
     p {
       margin: 0;
     }
@@ -48,7 +49,7 @@ const ImgStyled = styled.div`
 
 const WrapperButtonsStyled = styled.div`
   display: flex;
-  width: 45%;
+  width: 400px;
   margin: 0 !important;
   justify-content: space-between;
   /* display: flex; */
