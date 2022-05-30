@@ -5,7 +5,8 @@ const LayoutStyled = styled.div`
   /* grid-template-rows: 32px repeat(4, 60%); */
   /* grid-template-rows: 32px 820px 500px 800px 800px; */
   /* grid-template-rows: 1fr repeat(4, 10fr); */
-  grid-template-rows: repeat(4, 1fr);;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
   gap: 50px;
   /* margin: 30px 100px 0 100px; */
 `;
