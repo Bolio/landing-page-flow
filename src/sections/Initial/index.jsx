@@ -14,7 +14,6 @@ const InitialSectionStyled = styled.div`
   padding: 30px 100px 0 100px;
 
   @media screen and (max-width: 425px) {
-    background-color: blue;
     display: flex;
     flex-direction: column-reverse;
     padding: 30px 30px 0 30px;
