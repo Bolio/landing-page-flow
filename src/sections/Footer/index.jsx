@@ -49,6 +49,11 @@ const InitialInfoFooterStyled = styled.div`
     width: 40%;
     margin: 16px 0;
   }
+  @media screen and (max-width: 425px) {
+    p {
+      width: 60%;
+    }
+  }
 `;
 
 const SearchFooterStyled = styled.div`
