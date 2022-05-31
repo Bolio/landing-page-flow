@@ -9,9 +9,29 @@ const GalleryStyled = styled.div`
   width: 100%;
   height: 500px;
   /* background-color: green; */
-
   left: -290px;
   width: calc(100% + 600px);
+
+  @media screen and (max-width: 425px) {
+    width: 100%;
+    left: 0px;
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 425px) {
+    div:nth-child(1) {
+      display: none;
+    }
+    div:nth-child(2) {
+      display: none;
+    }
+    div:nth-child(4) {
+      display: none;
+    }
+    div:nth-child(5) {
+      display: none;
+    }
+  }
 `;
 
 const GalleryCellStyled = styled.div`
@@ -85,6 +105,16 @@ const GalleryCellStyled = styled.div`
         width: 95%;
         margin-left: 0;
       }
+    }
+  }
+  @media screen and (max-width: 425px) {
+    display: flex;
+    img {
+      width: 90%;
+      height: 75%;
+    }
+    div:nth-child(2) {
+      display: inline-block;
     }
   }
 `;
