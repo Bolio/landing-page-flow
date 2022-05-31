@@ -11,7 +11,7 @@ const FooterSectionStyled = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   /* padding: 30px 100px 0 100px; */
-  background-color: red;
+  /* background-color: red; */
 `;
 
 const ContainerFooterStyled = styled.footer`
@@ -29,7 +29,7 @@ const GridContainerFooterStyled = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 1fr 2fr 70px;
-  background-color: green;
+  /* background-color: green; */
   @media screen and (max-width: 425px) {
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@ const GridContainerFooterStyled = styled.div`
 `;
 
 const InitialInfoFooterStyled = styled.div`
-  background-color: orange;
+  /* background-color: orange; */
   grid-column: 1 /3;
   display: flex;
   justify-content: center;
@@ -51,7 +51,7 @@ const InitialInfoFooterStyled = styled.div`
 `;
 
 const SearchFooterStyled = styled.div`
-  background-color: purple;
+  /* background-color: purple; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,7 +72,7 @@ const SearchFooterStyled = styled.div`
 const SocialNetworksFooterStyled = styled.div`
   width: 100%;
   padding-left: 100px;
-  background-color: pink;
+  /* background-color: pink; */
   img {
     margin-bottom: 20px;
   }
@@ -112,7 +112,7 @@ const InformationContactFooterStyled = styled.div`
   justify-content: space-between;
   width: 100%;
   padding: 20px 80px 20px 100px;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   div {
     display: inline-block;
     p {
@@ -135,7 +135,7 @@ const InformationContactFooterStyled = styled.div`
 const CopyrightReservedFooterStyled = styled.div`
   grid-column: 1 /3;
   width: 100%;
-  background-color: yellow;
+  /* background-color: yellow; */
   padding: 0;
   @media screen and (max-width: 425px) {
     p {
