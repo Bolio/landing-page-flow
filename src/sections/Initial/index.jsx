@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import CallMadeIcon from "@mui/icons-material/CallMade";
 
 import Title from "../../components/Title";
 import Text from "../../components/Texts";
@@ -16,6 +17,7 @@ const InitialSectionStyled = styled.div`
     background-color: blue;
     display: flex;
     flex-direction: column-reverse;
+    padding: 30px 30px 0 30px;
   }
 `;
 
@@ -38,13 +40,24 @@ const InfoContactStyled = styled.div`
       margin: 0;
     }
     p:nth-child(1) {
-      padding: 20px 101px 20px 0;
+      padding: 20px 0px 20px 0;
     }
     p:nth-child(2) {
-      padding: 20px 160px 20px 0;
+      padding: 20px 0px 20px 0;
     }
     button {
       margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        margin-left: 5px;
+      }
+    }
+    img {
+      position: absolute;
+      left: 60%;
+      z-index: 1;
     }
   }
 
@@ -55,21 +68,44 @@ const InfoContactStyled = styled.div`
       p:nth-child(2) {
         font-size: 1.5rem;
       }
+      img {
+        display: none;
+      }
     }
   }
 `;
 
 const ImgVideoStyled = styled.div`
+  position: relative;
   width: 100%;
   height: fit-content;
   text-align: center;
-  img {
+  img:nth-child(1) {
     /* height: 100%; */
     /* object-fit: cover; */
     border-radius: 300px;
     /* margin: 0 auto; */
     max-width: 100%;
     height: auto;
+  }
+  img:nth-child(2) {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+  }
+
+  @media screen and (max-width: 425px) {
+    img:nth-child(1) {
+      margin-top: 50px;
+      object-fit: none;
+      width: 500px;
+      height: 400px;
+      border-radius: 45%;
+    }
+    img:nth-child(2) {
+      position: absolute;
+      left: 29%;
+    }
   }
 `;
 
@@ -99,11 +135,14 @@ const InitialSection = () => {
               status={"primary"}
             >
               CONTACTO
+              <CallMadeIcon fontSize="small" />
             </ButtonText>
+            <img src="src/assets/mano-ec.png" alt="btn-play" />
           </div>
         </InfoContactStyled>
         <ImgVideoStyled>
           <img src="src/assets/img-video.jpg" alt="img-video" />
+          <img src="src/assets/btn-play.png" alt="btn-play" />
         </ImgVideoStyled>
       </InitialSectionStyled>
     </>
