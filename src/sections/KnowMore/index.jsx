@@ -8,6 +8,10 @@ const KnowMoreSectionStyled = styled.div`
   /* grid-template-rows: 60%; */
   grid-template-rows: auto;
   /* padding: 30px 100px 0 100px; */
+
+  @media screen and (max-width: 425px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const InfoKnowMoreStyled = styled.div`
@@ -16,18 +20,19 @@ const InfoKnowMoreStyled = styled.div`
   grid-template-rows: 1fr;
   div {
     /* margin-top: 100px; */
+    padding-left: 15px;
     p {
       margin: 0;
     }
     p:nth-child(1) {
-      padding: 20px 160px 0 0;
+      padding: 20px 0px 0 0;
       letter-spacing: 3px;
     }
     p:nth-child(2) {
-      padding: 20px 101px 20px 0;
+      padding: 20px 0px 20px 0;
     }
     p:nth-child(3) {
-      padding: 20px 160px 20px 0;
+      padding: 20px 0px 20px 0;
     }
     button {
       margin-top: 20px;
@@ -45,6 +50,12 @@ const ImgStyled = styled.div`
     height: 100%;
     margin: 0 auto;
   }
+  @media screen and (max-width: 425px) {
+    /* height: 0; */
+    img {
+      width: 200px;
+    }
+  }
 `;
 
 const WrapperButtonsStyled = styled.div`
@@ -52,6 +63,9 @@ const WrapperButtonsStyled = styled.div`
   width: 400px;
   margin: 0 !important;
   justify-content: space-between;
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+  }
   /* display: flex; */
   /* p {
     height: 100%;
