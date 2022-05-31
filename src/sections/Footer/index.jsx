@@ -19,6 +19,10 @@ const ContainerFooterStyled = styled.footer`
   padding: 50px 100px 0 100px;
   background-color: ${(props) => props.theme.colors.blue};
   border-radius: 350px 100px 0px 0px;
+
+  @media screen and (max-width: 425px) {
+    padding: 50px 0 0 0;
+  }
 `;
 
 const GridContainerFooterStyled = styled.div`
@@ -26,6 +30,10 @@ const GridContainerFooterStyled = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 1fr 2fr 70px;
   background-color: green;
+  @media screen and (max-width: 425px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const InitialInfoFooterStyled = styled.div`
@@ -49,6 +57,16 @@ const SearchFooterStyled = styled.div`
   align-items: center;
   grid-column: 1 /3;
   /* padding: 20px 550px 0 550px; */
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+    input {
+      margin: 0;
+    }
+    button {
+      margin-top: 20px;
+      width: 300px;
+    }
+  }
 `;
 
 const SocialNetworksFooterStyled = styled.div`
@@ -68,6 +86,23 @@ const SocialNetworksFooterStyled = styled.div`
     justify-content: space-between;
     svg {
       color: ${(props) => props.theme.colors.lightBlue};
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 0;
+    img {
+      width: fit-content;
+      margin-top: 20px;
+    }
+    div#container-social-network-icons {
+      width: 50%;
+      justify-content: space-evenly;
     }
   }
 `;
@@ -90,6 +125,11 @@ const InformationContactFooterStyled = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 425px) {
+    padding: 0;
+    text-align: center;
+  }
 `;
 
 const CopyrightReservedFooterStyled = styled.div`
@@ -97,6 +137,11 @@ const CopyrightReservedFooterStyled = styled.div`
   width: 100%;
   background-color: yellow;
   padding: 0;
+  @media screen and (max-width: 425px) {
+    p {
+      margin-top: 15px;
+    }
+  }
 `;
 
 const LinkSocialNetworksStyled = styled.div`
