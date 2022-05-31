@@ -22,6 +22,7 @@ const ContainerFooterStyled = styled.footer`
 
   @media screen and (max-width: 425px) {
     padding: 50px 0 0 0;
+    border-radius: 180px 50px 0px 0px;
   }
 `;
 
@@ -127,7 +128,7 @@ const InformationContactFooterStyled = styled.div`
   }
 
   @media screen and (max-width: 425px) {
-    padding: 0;
+    padding: 0 20px;
     text-align: center;
   }
 `;
@@ -139,7 +140,7 @@ const CopyrightReservedFooterStyled = styled.div`
   padding: 0;
   @media screen and (max-width: 425px) {
     p {
-      margin-top: 15px;
+      margin: 30px 0;
     }
   }
 `;
